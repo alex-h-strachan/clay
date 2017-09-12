@@ -12,6 +12,7 @@
             "exports": "always-multiline",
             "functions": "never"
         }],
-        "no-var": 2
+        "no-var": 2,
+        "eol-last": [2, "always"]
     }
 }
