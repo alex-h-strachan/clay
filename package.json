@@ -4,7 +4,7 @@
   "description": "A node & postgres micro-framework",
   "main": "index.js",
   "scripts": {
-    "test": "eslint . && nyc mocha"
+    "test": "eslint index lib && nyc mocha"
   },
   "keywords": [
     "postgres"
@@ -12,6 +12,9 @@
   "author": "alex strachan",
   "license": "MIT",
   "devDependencies": {
-    "eslint-config-standard": "^10.2.1"
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "uuid": "^3.1.0"
   }
 }
