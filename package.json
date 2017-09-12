@@ -1,0 +1,17 @@
+{
+  "name": "clay",
+  "version": "1.0.0",
+  "description": "A node & postgres micro-framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && nyc mocha"
+  },
+  "keywords": [
+    "postgres"
+  ],
+  "author": "alex strachan",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-standard": "^10.2.1"
+  }
+}
