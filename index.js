@@ -2,7 +2,7 @@ const uuid = require('uuid').v4;
 const path = require('path');
 const fs = require('fs');
 
-function fire(options) {
+function kiln(options) {
     const clay = {};
     clay.options = options || {};
 
@@ -39,4 +39,4 @@ function setDefaults(clay) {
         };
 }
 
-module.exports = fire;
+module.exports = kiln;
