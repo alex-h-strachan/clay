@@ -19,7 +19,9 @@ function fire(options) {
         if (clay[toolsArray[i]] !== undefined) {
             throw new Error(`duplicate name ${toolsDir[i]} in tools directory`);
         }
-        clay[toolsArray[i]] = require(path.join(__dirname, '/lib/tools/', toolsDir[i]));
+        clay[toolsArray[i]] = require(
+            path.join(__dirname, '/lib/tools/', toolsDir[i])
+        )(clay.options);
     }
 
     return clay;
