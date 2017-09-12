@@ -24,6 +24,13 @@ describe('The Clay Library', () => {
             ...toolsDir,
         ];
 
-        assert.deepEqual(Object.keys(clay), expectedKeys);
+        assert.deepEqual(expectedKeys, Object.keys(clay));
+    });
+
+    it('Sets the default log level to error', () => {
+        const clay = kiln();
+        assert.equal('error', clay.options.logLevel);
     });
 });
+
+require('./tools/l.js');

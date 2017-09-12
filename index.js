@@ -28,6 +28,7 @@ function kiln(options) {
 }
 
 function setDefaults(clay) {
+    clay.options.logLevel = clay.options.logLevel || 'error';
     clay.options.dataBinding = clay.options.dataBinding ||
         function() {};
     clay.options.errorBinding = clay.options.errorBinding ||
