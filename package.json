@@ -4,7 +4,8 @@
   "description": "A node & postgres micro-framework",
   "main": "index.js",
   "scripts": {
-    "test": "eslint index.js lib test && nyc mocha"
+    "test": "eslint index.js lib test && nyc mocha",
+    "report-coverage": "nyc --reporter=htmlnpm test"
   },
   "keywords": [
     "postgres"
